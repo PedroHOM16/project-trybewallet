@@ -12,7 +12,6 @@ export function getCoin() {
       const response = await fetch(CURRENCIES_API);
       const data = await response.json();
       const selectedData = Object.keys(data).filter((item) => item !== 'USDT');
-      console.log(selectedData);
       dispatch(currencies(selectedData));
     } catch (error) {
       console.log(error);
