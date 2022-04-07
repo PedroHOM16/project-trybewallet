@@ -14,7 +14,6 @@ class Header extends React.Component {
 
   render() {
     const { emailData } = this.props;
-    console.log('func', this.sumValues());
     return (
       <header>
         <span data-testid="email-field">{ emailData }</span>
